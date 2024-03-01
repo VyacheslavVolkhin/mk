@@ -1,3 +1,281 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.form-box {
+	margin-bottom: 10rem;
+	color: #fff;
+	.title-inner-box {
+		margin-bottom: 4rem;
+	}
+	.box-inner-wrap {
+		background-color: var(--clr-base);
+		padding: 6rem 6rem 6rem 6rem;
+	}
+	.form-inner-wrap {
+		margin: 0 auto;
+		max-width: 78.2rem;
+	}
+	.frm-row, .frm-row-submit {
+		margin: 0 -8px;
+	}
+	.frm-field {
+		padding: 0 8px;
+		width: 100%;
+		margin-bottom: 16px;
+	}
+	.frm-row-submit {
+		.frm-field {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.field-section {
+		width: 33.33%;
+	}
+	.btn {
+		width: 100%;
+	}
+}
+.tiles-slider-box {
+	margin-bottom: 5.7rem;
+	position: relative;
+	.slider-wrap {
+		margin: 0 -2rem;
+		position: static;
+	}
+	.slider {
+		position: static;
+	}
+	.sl-wrap {
+		padding: 0 2rem;
+	}
+	.title-inner-box {
+		margin-bottom: 3rem;
+		padding: 0 50px;
+	}
+	.box-inner-wrap {
+		display: flex;
+		align-items: center;
+		min-height: 42rem;;
+	}
+	.photo-inner-wrap {
+		width: 50%;
+		flex-shrink: 0;
+		padding: 0 4rem;
+	}
+	.info-inner-wrap {
+		width: 50%;
+		flex-shrink: 0;
+		padding-left: 15px;
+	}
+	.elm-photo {
+		margin: 0 auto;
+		max-width: 41.8rem;
+	}
+	.h1-title {
+		margin: 0 0 3rem 0;
+		font-weight: 500;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.elm-ico {
+			width: (60/50em);
+			height: (60/50em);
+			margin: 0 2.4rem 0 0;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.title-text {
+			display: inline;
+		}
+		&.title-att {
+			font-weight: bold;
+		}
+	}
+	.ico-arrow {
+		width: 5rem;
+		height: 5rem;
+		position: absolute;
+		top: -3px;
+		left: 0;
+	}
+	.ico-arrow-next {
+		left: auto;
+		right: 0;
+	}
+}
+.action-box {
+	margin-bottom: 10rem;
+	color: #fff;
+	.box-inner-wrap {
+		background: var(--clr-base);
+		display: flex;
+	}
+	.action-inner-wrap {
+		flex-shrink: 0;
+		width: 15em;
+		font-size: 2rem;
+		.btn {
+			min-height: 100%;
+			font-size: 1em;
+			font-weight: bold;
+			width: 100%;
+			padding: 0 10px;
+		}
+	}
+	.info-inner-wrap {
+		padding: 3.5rem 4rem 3.9rem 4.6rem;
+		flex: 1;
+	}
+	.title-inner-box {
+		text-align: left;
+		margin: 0;
+	}
+}
+.tiles-box, .tiles-icons-box {
+	margin-bottom: 10rem;
+	.items-wrap {
+		justify-content: center;
+		margin: 0 -1.3rem -2.6rem -1.3rem;
+	}
+	.item-wrap {
+		padding: 0 1.3rem;
+		margin-bottom: 2.6rem;
+		width: 25%;
+		&.wrap-half {
+			width: 50%;
+		}
+	}
+}
+.tiles-icons-box {
+	margin-bottom: 9.5rem;
+	.items-wrap {
+		margin: 0 -1.5rem -4rem -1.5rem;
+	}
+	.item-wrap {
+		padding: 0 1.5rem;
+		width: 20%;
+	}
+}
+.about-box {
+	margin-bottom: 7.6rem;
+	font-size: 2.4rem;
+	line-height: (28/24);
+	.box-inner-wrap {
+		display: flex;
+		align-items: center;
+	}
+	.info-inner-wrap {
+		width: 46%;
+		flex-shrink: 0;
+		padding: 0 4rem 0 0;
+		min-height: 15em;
+	}
+	.photo-inner-wrap {
+		width: 54%;
+		flex-shrink: 0;
+	}
+	.btn {
+		margin-top: 0.8em;
+	}
+	.elm-photo {
+		max-width: 62.7rem;
+	}
+	.h1-title {
+		max-width: (400/50em);
+		margin-bottom: 0.45em;
+	}
+}
+.title-inner-box {
+	text-align: center;
+	margin-bottom: 7rem;
+	font-size: 2rem;
+	line-height: (24/20);
+	.h1-title, .h2-title {
+		margin-bottom: 8px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	b {
+		font-weight: 500;
+	}
+}
+@media (max-width: 1023px) {
+	.tiles-box, .tiles-icons-box {
+		.item-wrap {
+			width: 33.33%;
+			&.wrap-half {
+				width: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.action-box {
+		.box-inner-wrap {
+			display: block;
+		}
+		.info-inner-wrap {
+			width: 100%;
+			padding: 4rem;
+		}
+		.action-inner-wrap {
+			width: 100%;
+			min-width: 0;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.form-box {
+		.frm-field {
+			width: 100%;
+		}
+		.box-inner-wrap {
+			padding: 4rem;
+		}
+	}
+	.tiles-slider-box {
+		.box-inner-wrap {
+			display: block;
+		}
+		.photo-inner-wrap {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 5rem;
+			.elm-photo {
+
+			}
+		}
+		.info-inner-wrap {
+			width: 100%;
+			padding: 0;
+		}
+	}
+	.tiles-box, .tiles-icons-box {
+		.item-wrap {
+			width: 50%;
+		}
+	}
+	.about-box {
+		.box-inner-wrap {
+			display: block;
+		}
+		.info-inner-wrap {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 5rem;
+			min-height: 0;
+		}
+		.photo-inner-wrap {
+			width: 100%;
+			.elm-photo {
+				margin: 0 auto;
+			}
+		}
+		.h1-title {
+			max-width: 100%;
+		}
+	}
+}
