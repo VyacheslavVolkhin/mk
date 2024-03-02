@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+
+	//animate anchor scroll
+	$('.js-anchor-button').on("click", function(e){
+		var anchor = $(this);
+		if ($(window).innerWidth()<1024) {
+			$('html, body').stop().animate({
+				scrollTop: $(anchor.attr('href')).offset().top - 20}, 1000);
+				e.preventDefault();
+		} else {
+			$('html, body').stop().animate({
+				scrollTop: $(anchor.attr('href')).offset().top}, 1000);
+				e.preventDefault();
+		}
+		if (!$(this).parents('.js-tabs-nav')) {
+			return false;
+		}
+	});
+
 	//phone masked
 	$('input[type="tel"]').mask("+7 (999) 999-99-99",{placeholder:"+7 (___) ___-__-__"});
 	$('input[type="tel"]').on('click', function() {
